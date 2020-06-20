@@ -27,7 +27,7 @@ def request():
             founds = link.get('href')
             #print ('1_encontrado',founds)
             if "https" in founds:
-                print('é seguro')
+                print('links seguros [https]')
                 try:
                     other_pages_sec = urllib.request.urlopen(founds)
                     print(other_pages_sec)
@@ -42,7 +42,8 @@ def request():
                 except:
                     print('Não achamos nada ;-;')
 
-
+            print(founds)
+            
 
             """if 'https' or 'http' in founds:
                 print('------Links externos------')
